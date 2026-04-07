@@ -3,11 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+
+  "homepage": "https://N-Abhishek-S.github.io/Startup_Idea_Validation_Platform",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+
   "dependencies": {
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
@@ -16,6 +22,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1"
   },
+
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
